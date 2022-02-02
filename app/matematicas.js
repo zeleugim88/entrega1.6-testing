@@ -10,3 +10,7 @@ const restar = (...numeros) => (numeros[0]*2 - numeros.reduce((total, numero) =>
 const multiplicar = (...numeros) => numeros.reduce((total,numero) => total *= numero);
 
 const dividir = (...numeros) => (numeros.reduce((total, numero) => total /= numero));
+
+module.exports = {sumar, restar, multiplicar, dividir};
+
+
