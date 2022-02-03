@@ -27,7 +27,7 @@ let salaries = [{
 const getEmployee = (id) => { 
     return new Promise ((resolve, reject) =>{
         const foundId = employees.filter(employees => employees.id === id)
-        resolve(foundId[0]? resolve(foundId[0]):reject("Id de trabajador no encontrado"))
+        foundId[0]? resolve(foundId[0]):reject("Id de trabajador no encontrado")
     })
 }
 
