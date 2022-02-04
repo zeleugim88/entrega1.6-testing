@@ -1,6 +1,6 @@
 //Crea els tests corresponents per verificar el funcionament de l'exercici Promises & Callbacks Nivell 2 - Exercici 3
 
-const promises = require('../app/promise.js')
+const promises = require('../app/4_promise.js')
 
 test('Promises & Callbacks Nivell 2 - Exercici 3', () => {
   expect.assertions(1); 

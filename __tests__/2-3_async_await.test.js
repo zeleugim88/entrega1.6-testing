@@ -1,7 +1,7 @@
 //Crea els tests corresponents per verificar el funcionament de l'exercici Async / Await Nivell 1 - Exercici 1
 //Crea els tests corresponents per verificar el funcionament de l'exercici Async / Await Nivell 2 - Exercici 1
 
-const asyncAwait = require('../app/async_await.js')
+const asyncAwait = require('../app/2-3_async_await.js')
 
 describe('TEST funciones Async / Await', () => {
 
@@ -24,13 +24,3 @@ describe('TEST funciones Async / Await', () => {
             }); 
 })
 
-//Verifica mitjançant tests l'execució de l'exercici Async / Await Nivell 2 Exercici 1 utilitzant Jest Fake Timers.
-
-test('Jest Fake Timers',async () => {
-    jest.useFakeTimers();
-    jest.spyOn(global, 'setTimeout');
-    asyncAwait.fPromise()
-    
-    expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 2000);
-}); 

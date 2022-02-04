@@ -1,10 +1,10 @@
 //Verifica mitjançant tests l'exercici Classes & Arrow Functions Nivell 3 - Exercici 1.
 
-const Animal = require('../app/classes');
-const Perro = require('../app/classes')
+const Animal = require('../app/6-7_classes');
+const Perro = require('../app/6-7_classes')
 
 const mockDadesAnimal = jest.fn();
-jest.mock('../app/classes', () => {
+jest.mock('../app/6-7_classes', () => {
   return jest.fn().mockImplementation(() => {
     return {dadesAnimal: mockDadesAnimal};
   });

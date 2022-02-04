@@ -1,5 +1,5 @@
 //Crea un arxiu amb les funcions sumar, restar, multiplicar i dividir dos o més operands. Testeja la correcta execució d'aquestes funcions.
-const fMatematicas = require('../app/matematicas.js')
+const fMatematicas = require('../app/1_matematicas.js')
 
 describe('TEST funciones matematicas', () => {
 

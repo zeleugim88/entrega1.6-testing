@@ -1,10 +1,10 @@
 //Crea un mock que comprovi les crides al constructor de la classe Persona 
 //i al seu mètode decirNombre en l'exercici Classes & Arrow Functions - Nivell 2 Exercici 2
 
-const Persona = require('../app/classes')
+const Persona = require('../app/6-7_classes')
 
 const mockDirNom = jest.fn();
-jest.mock('../app/classes', () => { // Persona is now a mock constructor
+jest.mock('../app/6-7_classes', () => { // Persona is now a mock constructor
   return jest.fn().mockImplementation(() => { //building constructor function
     return {dirNom: mockDirNom};
   });
